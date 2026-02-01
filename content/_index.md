@@ -16,29 +16,38 @@ title: "Imi Lab: Art of the Possible"
     color: #ffffff !important; 
     margin: 0; padding: 0; 
     font-family: 'Inter', sans-serif; 
-    font-size: 16pt; /* Increased base font */
+    font-size: 16pt; 
     line-height: 1.7;
   }
   .lab-wrapper { max-width: 1100px; margin: auto; padding: 60px 40px; }
   
-  /* Headings Scale */
-  h1 { font-size: 3.5rem; color: #00d1b2; margin-bottom: 1rem; }
-  h2 { font-size: 2.5rem; color: #00d1b2; border-bottom: 2px solid #333; padding-bottom: 15px; margin-top: 60px; }
-  h3 { font-size: 1.8rem; margin-top: 30px; }
+  h1 { font-size: 3.5rem; color: #00d1b2; margin-bottom: 1rem; font-weight: 800 !important; }
+  h2 { font-size: 2.5rem; color: #00d1b2; border-bottom: 2px solid #333; padding-bottom: 15px; margin-top: 60px; font-weight: 700 !important; }
+  h3 { font-size: 1.8rem; margin-top: 30px; font-weight: 700 !important; }
 
   .intro-text { font-size: 1.4rem; color: #e0e0e0; margin-bottom: 40px; }
   
-  /* Horizontal Sectioning */
   .horizontal-section { display: flex; flex-direction: row; gap: 40px; margin: 40px 0; align-items: flex-start; }
-  .side-label { flex: 1; font-weight: bold; color: #00d1b2; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; border-top: 1px solid #00d1b2; padding-top: 10px; }
+  
+  /* Fixed Bold for The Concept */
+  .side-label { 
+    flex: 1; 
+    font-weight: 800 !important; 
+    color: #00d1b2; 
+    font-size: 1.3rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    border-top: 2px solid #00d1b2; 
+    padding-top: 10px; 
+  }
+  
   .main-content { flex: 4; }
 
-  .highlight { color: #00d1b2; font-weight: bold; }
+  /* Fixed Bold for What is Imi? */
+  .highlight-bold { color: #00d1b2; font-weight: 800 !important; font-size: 1.4rem; display: block; margin-bottom: 5px; }
   
-  /* Wide Cards for Domains */
-  .domain-list { display: flex; flex-direction: column; gap: 20px; }
-  .wide-card { background: #0a0a0a; border: 1px solid #222; border-left: 5px solid #00d1b2; padding: 30px; }
-  .wide-card strong { font-size: 1.5rem; display: block; margin-bottom: 10px; color: #00d1b2; }
+  .wide-card { background: #0a0a0a; border: 1px solid #222; border-left: 5px solid #00d1b2; padding: 30px; margin-bottom: 20px; }
+  .wide-card strong { font-size: 1.6rem; display: block; margin-bottom: 10px; color: #00d1b2; font-weight: 800 !important; }
 
   .tech-stack { font-size: 14pt; color: #888; background: #0a0a0a; padding: 30px; border: 1px dashed #444; margin: 40px 0; border-radius: 8px; }
   .footer { font-size: 11pt; color: #555; margin-top: 80px; border-top: 1px solid #222; padding-top: 30px; line-height: 1.4; }
@@ -55,7 +64,7 @@ I am <strong>Venkat</strong>, a supply chain practitioner with <strong>25+ years
 <div class="horizontal-section">
   <div class="side-label">The Concept</div>
   <div class="main-content">
-    <span class="highlight">What is Imi?</span><br>
+    <strong class="highlight-bold">What is Imi?</strong>
     Suggested by Gemini AI, <strong>'Imi'</strong> finds its roots in Polynesian seafaring traditions. It means 'to seek' or 'to search for'—much like the ancient navigators who traversed vast oceans using only the stars and internal drive. This lab is about that same spirit of navigation: finding a meaningful path through the complex, often chaotic ocean of supply chain data.
   </div>
 </div>
@@ -104,6 +113,8 @@ This lab is dedicated to bridging the gap between legacy constraints and modern 
     </ul>
   </div>
 </div>
+
+
 
 <div class="tech-stack">
   <strong>The Stack:</strong> Hugo | Gemini AI | GitHub Actions | Cloudflare | Pure CSS
