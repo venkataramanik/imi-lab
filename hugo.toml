@@ -1,12 +1,8 @@
-baseURL = 'https://imi-lab.net/'
+    baseURL = 'https://imi-lab.net/'
 languageCode = 'en-us'
 title = 'IMI LAB'
-theme = 'PaperMod' # This is the cleanest 'Pragmatic' theme
+theme = 'ananke'
 
 [params]
-    # Font settings for that 14pt feel
     fontSize = 14
-    homeInfoParams = { Title = "IMI LAB", Content = "The Art of the Possible in Supply chain." }
-    
-    # Standard Professional Disclaimer for the footer
-    footer = "Standard Professional Disclaimer: This is a personal technical lab. No sponsor/partner mentions."
+    description = "Art of the Possible in Supply chain management"
