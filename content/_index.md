@@ -1,6 +1,18 @@
 ---
-title: "IMI LAB- The art of the possible"
+title: "Imi Lab: Art of the Possible"
 ---
+
+<script>
+  // Force-kill any lingering service workers from the old theme
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for(let registration of registrations) {
+        registration.unregister();
+        console.log('Old Service Worker Purged');
+      }
+    });
+  }
+</script>
 
 <style>
   body { 
@@ -23,7 +35,7 @@ title: "IMI LAB- The art of the possible"
 
 <div class="lab-wrapper">
 
-I am Venkat. This lab is a personal technical  for **'Art of the Possible' tinkering** at the intersection of **Logistics, Python, and AI**. 
+I am Venkat. This lab is a personal technical space for **'Art of the Possible' tinkering**. 
 
 I focus on the raw problem, the technical architecture/API logic, and specific benefits—no hype, no jargon.
 
