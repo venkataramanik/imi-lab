@@ -1,5 +1,14 @@
+baseURL = 'https://imi-lab.net/'
+languageCode = 'en-us'
+title = 'IMI LAB'
+theme = 'ananke'  # This is the critical line you were missing
+
 [params]
-  description = "Art of the Possible in Supply chain management"
-  # Try the path without the leading slash
+  description = "Art of the Possible in SCM"
   featured_image = "images/1.jpeg"
   recent_posts_number = 5
+  
+  [params.ananke]
+    # This keeps the styling clean and white as we discussed
+    background_color_class = "bg-white"
+    text_color_class = "text-black"
