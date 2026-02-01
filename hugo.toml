@@ -1,10 +1,8 @@
-    baseURL = 'https://imi-lab.net/'
+baseURL = 'https://imi-lab.net/'
 languageCode = 'en-us'
 title = 'IMI LAB'
 theme = 'ananke'
 
 [params]
-    fontSize = 14
-    description = "Art of the Possible in Supply chain management"
-
-
+  # This tells the Ananke theme to load your custom styles
+  custom_css = ["css/custom.css"]
