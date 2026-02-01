@@ -1,5 +1,5 @@
 ---
-title: "Imi Lab: Art of the Possible"
+title: "DEI"
 ---
 
 <script>
