@@ -10,5 +10,5 @@ theme = 'ananke'
   section = ["HTML"]
 
 [params]
-  description = "Art of the Possible in SCM"
+  description = "Art of the Possible in Supply chain management"
    recent_posts_number = 5
