@@ -2,7 +2,7 @@
 title: "Imi Lab"
 ---
 
-<img src="/images/static/1.jpeg" alt="Venkat" style="width:180px; border-radius:8px; float:right; margin-left:20px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+<img src="/images/1.jpeg" alt="Venkat" style="width:180px; border-radius:8px; float:right; margin-left:20px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
 
 I am Venkat, a Supply Chain professional exploring the intersection of **Logistics, Python, and AI**. 
 
