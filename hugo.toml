@@ -2,6 +2,6 @@ disableKinds = ["RSS", "taxonomy", "term"]
 ignoreErrors = ["error-remote-getjson"]
 
 [params]
-  featured_image = "images/1.jpeg"
+  featured_image = "images/venkat.jpeg"
   # This tells the theme NOT to stretch the image
   cover_dimming_class = "bg-black-60"
