@@ -3,17 +3,11 @@ languageCode = 'en-us'
 title = 'IMI LAB'
 theme = 'ananke'
 
+# Core site settings
 disableKinds = ["RSS", "taxonomy", "term"]
 
 [params]
   description = "Art of the Possible in SCM"
-  # This restores the dark header look
   background_color_class = "bg-black"
   recent_posts_number = 5
-[asset_dir]
-  # This ensures every build gets a fresh 'identity'
-  fingerprint = true
-
-[params]
-  # Ananke specific cache control
-  custom_css = []
+  # Ensure these are the only lines under [params]
