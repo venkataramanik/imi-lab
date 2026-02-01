@@ -4,5 +4,12 @@ title = 'IMI LAB'
 theme = 'ananke'
 
 [params]
-  # This tells the Ananke theme to load your custom styles
-  custom_css = ["css/custom.css"]
+  description = "Art of the Possible in Supply Chain & AI"
+  # This adds your bio to the top of the page
+  featured_image = "/images/chicago.jpeg" 
+  recent_posts_number = 5
+  
+  [params.ananke]
+    # Pragmatic style: simple, fast, white background
+    background_color_class = "bg-white"
+    text_color_class = "text-black"
