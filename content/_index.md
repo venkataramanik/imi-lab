@@ -3,9 +3,20 @@ title: "Imi Lab: Art of the Possible"
 ---
 
 <script>
+  // Level 2 Brute Force Service Worker & Cache Killer
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.getRegistrations().then(function(registrations) {
-      for(let registration of registrations) { registration.unregister(); }
+      for(let registration of registrations) {
+        registration.unregister();
+        console.log('SW Unregistered');
+      }
+    });
+  }
+  // Clear the actual Cache Storage API
+  if ('caches' in window) {
+    caches.keys().then(function(names) {
+      for (let name of names) caches.delete(name);
+      console.log('Cache Storage Purged');
     });
   }
 </script>
@@ -26,10 +37,8 @@ title: "Imi Lab: Art of the Possible"
   h3 { font-size: 1.8rem; margin-top: 30px; font-weight: 700 !important; }
 
   .intro-text { font-size: 1.4rem; color: #e0e0e0; margin-bottom: 40px; }
-  
   .horizontal-section { display: flex; flex-direction: row; gap: 40px; margin: 40px 0; align-items: flex-start; }
   
-  /* Fixed Bold for The Concept */
   .side-label { 
     flex: 1; 
     font-weight: 800 !important; 
@@ -42,8 +51,6 @@ title: "Imi Lab: Art of the Possible"
   }
   
   .main-content { flex: 4; }
-
-  /* Fixed Bold for What is Imi? */
   .highlight-bold { color: #00d1b2; font-weight: 800 !important; font-size: 1.4rem; display: block; margin-bottom: 5px; }
   
   .wide-card { background: #0a0a0a; border: 1px solid #222; border-left: 5px solid #00d1b2; padding: 30px; margin-bottom: 20px; }
@@ -113,8 +120,6 @@ This lab is dedicated to bridging the gap between legacy constraints and modern 
     </ul>
   </div>
 </div>
-
-
 
 <div class="tech-stack">
   <strong>The Stack:</strong> Hugo | Gemini AI | GitHub Actions | Cloudflare | Pure CSS
