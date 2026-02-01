@@ -1,15 +1,5 @@
-baseURL = 'https://imi-lab.net/'
-languageCode = 'en-us'
-title = 'IMI LAB'
-theme = 'ananke'
-
 [params]
-  description = "Art of the Possible in Supply Chain & AI"
-  # This adds your bio to the top of the page
-  featured_image = "/images/1.jpeg" 
+  description = "Art of the Possible in Supply chain management"
+  # Try the path without the leading slash
+  featured_image = "images/1.jpeg"
   recent_posts_number = 5
-  
-  [params.ananke]
-    # Pragmatic style: simple, fast, white background
-    background_color_class = "bg-white"
-    text_color_class = "text-black"
