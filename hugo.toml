@@ -11,5 +11,4 @@ theme = 'ananke'
 
 [params]
   description = "Art of the Possible in SCM"
-  featured_image = "images/1.jpeg"
-  recent_posts_number = 5
+   recent_posts_number = 5
