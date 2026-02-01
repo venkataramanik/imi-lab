@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -19,21 +20,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Clean and Clone Theme
-        run: |
-          rm -rf themes/ananke
-          mkdir -p themes
-          git clone --depth 1 https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
 
+      - name: Clean and Clone Theme
+        run: |
+          rm -rf themes/ananke
+          mkdir -p themes
+          git clone --depth 1 https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+
       - name: Build
         run: |
-          hugo --minify
+          rm -rf public
+          hugo --minify --cleanDestinationDir
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
