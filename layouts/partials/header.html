@@ -1,1 +1,17 @@
-
+<header class="cover bg-top" style="background-image: none; background-color: #2D3436;">
+  <div class="pb3-m pb6-l bg-black-60">
+    <div class="tc-l pv3 ph3 ph4-ns">
+      <div style="float: right; margin-top: 20px;">
+        <img src="/images/1.jpeg" style="width: 150px; border-radius: 50%; border: 3px solid white; margin-right: 40px;">
+      </div>
+      <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">
+        {{ .Title | default .Site.Title }}
+      </h1>
+      {{ with .Params.description }}
+        <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 ph3">
+          {{ . }}
+        </h2>
+      {{ end }}
+    </div>
+  </div>
+</header>
