@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: Deploy Hugo site to Pages
 
 on:
   push:
@@ -12,12 +12,13 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -26,16 +27,17 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Clean and Clone Theme
-        run: |
-          rm -rf themes/ananke
-          mkdir -p themes
-          git clone --depth 1 https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
-
       - name: Build
         run: |
-          rm -rf public
-          hugo --minify --cleanDestinationDir
+          # Clean old files and build fresh
+          hugo --gc --minify --cleanDestinationDir
+          # Force Chrome to drop the 'installed' version by deleting these
+          rm -f public/service-worker.js
+          rm -f public/sw.js
+          # Create a unique version file
+          echo $(date +%s) > public/cache_bust.txt
+          # Re-create CNAME for your custom domain
+          echo "imi-lab.net" > public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -43,3 +45,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: imi-lab.net
+          force_orphan: true
