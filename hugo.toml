@@ -1,18 +1,4 @@
-baseURL = 'https://imi-lab.net/'
-languageCode = 'en-us'
-title = 'IMI LAB'
-theme = 'ananke'
-
-# Force Hugo to only produce HTML
-[outputs]
-  home = ["HTML"]
-  page = ["HTML"]
-  section = ["HTML"]
-
 [params]
-  description = "Art of the Possible in Supply chain management"
-   recent_posts_number = 5
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+  featured_image = "images/1.jpeg"
+  # This tells the theme NOT to stretch the image
+  cover_dimming_class = "bg-black-60"
