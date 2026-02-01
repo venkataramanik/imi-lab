@@ -12,13 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
 
-      - name: Force Clone Theme
+      - name: Clean and Clone Theme
         run: |
+          rm -rf themes/ananke
           mkdir -p themes
-          git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+          git clone --depth 1 https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -27,7 +27,8 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: |
+          hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
