@@ -1,3 +1,6 @@
+disableKinds = ["RSS", "taxonomy", "term"]
+ignoreErrors = ["error-remote-getjson"]
+
 [params]
   featured_image = "images/1.jpeg"
   # This tells the theme NOT to stretch the image
