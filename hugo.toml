@@ -12,3 +12,7 @@ theme = 'ananke'
 [params]
   description = "Art of the Possible in Supply chain management"
    recent_posts_number = 5
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
