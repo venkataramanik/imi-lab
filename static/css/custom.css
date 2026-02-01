@@ -1,0 +1,29 @@
+/* Ensure the base font size is 14pt */
+html, body {
+    font-size: 14pt !important;
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Create clean, spaced boxes for content so text doesn't hit the edges */
+.pa3, .pa4-l {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+/* Standardize bolding for key deliverables */
+strong, b {
+    font-weight: 700;
+    color: #111;
+}
+
+/* Footer styling for the professional disclaimer */
+footer {
+    font-size: 12pt;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-top: 1px solid #eee;
+    color: #666;
+}
