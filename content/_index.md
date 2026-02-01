@@ -14,7 +14,7 @@ title: "Imi Lab"
 
 <div class="container">
 
-PODA, a Supply Chain professional exploring the intersection of **Logistics, Python, and AI**. 
+panni, a Supply Chain professional exploring the intersection of **Logistics, Python, and AI**. 
 
 This lab is a technical space for **'Art of the Possible'** tinkering—focusing on raw problems, technical architecture, and specific benefits without the hype.
 
