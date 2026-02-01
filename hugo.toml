@@ -3,12 +3,12 @@ languageCode = 'en-us'
 title = 'IMI LAB'
 theme = 'ananke'
 
-# Kill the RSS and extra folders to force a clean HTML build
 disableKinds = ["RSS", "taxonomy", "term"]
 
 [params]
-  description = "Art of the Possible in Supply Chain Management"
-  background_color_class = "bg-white"
+  description = "Art of the Possible in SCM"
+  # This restores the dark header look
+  background_color_class = "bg-black"
   recent_posts_number = 5
 [asset_dir]
   # This ensures every build gets a fresh 'identity'
