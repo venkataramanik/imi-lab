@@ -2,9 +2,19 @@
 title: "Imi Lab"
 ---
 
+<style>
+  body { background-color: #1a1a1a !important; color: #eeeeee !important; font-family: sans-serif; }
+  .black-box { background: #000000; padding: 40px; border-radius: 8px; border: 1px solid #333; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14pt; }
+  th, td { border: 1px solid #444; padding: 12px; text-align: left; }
+  th { background-color: #222; }
+</style>
+
+<div class="black-box">
+
 I am Venkat, a Supply Chain professional exploring the intersection of **Logistics, Python, and AI**. 
 
-This is a personal technical lab for **'Art of the Possible'** tinkering. I focus on raw SCM problems, technical architecture/API logic, and specific benefits without the hype.
+This lab is a personal technical space for **'Art of the Possible'** tinkering. I focus on raw SCM problems, technical architecture, and specific benefits—no hype, just logic.
 
 ---
 
@@ -12,10 +22,8 @@ This is a personal technical lab for **'Art of the Possible'** tinkering. I focu
 
 | # | Raw Problem | Technical Architecture | Benefit |
 | :--- | :--- | :--- | :--- |
-| **001** | Port Congestion | Python + NVIDIA cuOpt + Weather API | 15% Drayage cost reduction via real-time rerouting. |
-| **002** | Demand Volatility | Prophet + Agentic Forecasting | Reduced safety stock by 10% without service hits. |
-| **003** | Cross-Border Compliance | Oracle GTM + LLM Extraction | 40% faster document classification for customs. |
-| **004** | Warehouse Slotting | Genetic Algorithms + Twin Logic | 12% reduction in picker travel time. |
-| **005** | Carbon Footprint | Green API + Route Optimization | Automated Scope 3 reporting with real-time route adjustments. |
+| **001** | Port Congestion | Python + NVIDIA cuOpt | 15% Drayage reduction. |
+| **002** | Demand Volatility | Prophet + Agentic Forecasting | 10% Safety stock reduction. |
+| **003** | Trade Compliance | Oracle GTM + LLM Extraction | 40% faster classification. |
 
----
+</div>
