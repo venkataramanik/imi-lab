@@ -1,19 +1,24 @@
-
 name: GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Make sure this matches your default branch name
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          submodules: true  # This pulls the theme
+          submodules: recursive
           fetch-depth: 0
+
+      - name: Force Clone Theme
+        run: |
+          mkdir -p themes
+          git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
