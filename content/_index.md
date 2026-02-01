@@ -1,5 +1,5 @@
 ---
-title: "Imi Lab: Art of the Possible"
+title: "IMI LAB- The art of the possible"
 ---
 
 <style>
@@ -23,7 +23,7 @@ title: "Imi Lab: Art of the Possible"
 
 <div class="lab-wrapper">
 
-I am Venkat. This lab is a personal technical space for **'Art of the Possible' tinkering** at the intersection of **Logistics, Python, and AI**. 
+I am Venkat. This lab is a personal technical  for **'Art of the Possible' tinkering** at the intersection of **Logistics, Python, and AI**. 
 
 I focus on the raw problem, the technical architecture/API logic, and specific benefits—no hype, no jargon.
 
