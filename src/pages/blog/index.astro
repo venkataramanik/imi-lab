@@ -9,29 +9,45 @@ const sorted = posts.sort((a, b) => b.data.pubDate - a.data.pubDate);
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Blog | IMI Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Articles | Supply Chain Intelligence</title>
 </head>
 <body class="bg-gray-50 font-sans">
-  <header class="bg-white border-b">
-    <nav class="max-w-4xl mx-auto px-4 py-4">
-      <a href="/" class="text-xl font-bold text-blue-900">← IMI Lab</a>
+  <header class="bg-slate-900 text-white">
+    <nav class="max-w-5xl mx-auto px-4 py-6">
+      <a href="/" class="text-xl font-bold">← Supply Chain Intelligence</a>
     </nav>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold mb-8">All Articles</h1>
-    {sorted.map(post => (
-      <article class="mb-8 border-b pb-8">
-        <span class="text-sm text-blue-600 font-semibold">{post.data.category}</span>
-        <h2 class="text-2xl font-bold mt-2">
-          <a href={`/blog/${post.slug}`}>{post.data.title}</a>
-        </h2>
-        <p class="text-gray-600 mt-2">{post.data.description}</p>
-        <time class="text-sm text-gray-500">
-          {new Date(post.data.pubDate).toLocaleDateString()}
-        </time>
-      </article>
-    ))}
+  <main class="max-w-5xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-2">All Articles</h1>
+    <p class="text-gray-600 mb-10">Daily insights on warehousing, transportation, procurement, and AI</p>
+    
+    <div class="space-y-8">
+      {sorted.map(post => (
+        <article class="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">{post.data.category}</span>
+            <time class="text-sm text-gray-500" datetime={post.data.pubDate}>
+              {new Date(post.data.pubDate).toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'})}
+            </time>
+          </div>
+          <h2 class="text-2xl font-bold mb-3">
+            <a href={`/blog/${post.slug}`} class="hover:text-blue-700 transition-colors">{post.data.title}</a>
+          </h2>
+          <p class="text-gray-600 mb-4">{post.data.description}</p>
+          <div class="flex flex-wrap gap-x-4 gap-y-1">
+            {post.data.tags.map(tag => (
+              <span class="text-sm text-gray-500">#{tag}</span>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
   </main>
+
+  <footer class="bg-slate-900 text-slate-400 py-12 mt-20 text-center">
+    <p>&copy; {new Date().getFullYear()} Supply Chain Intelligence</p>
+  </footer>
 </body>
 </html>
