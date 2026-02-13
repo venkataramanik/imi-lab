@@ -11,42 +11,63 @@ const recent = sorted.filter(p => p !== featured).slice(0, 5);
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>IMI Lab | Supply Chain Innovation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supply Chain Intelligence | Daily Insights</title>
+  <meta name="description" content="Daily insights on warehousing, transportation, procurement, and AI for supply chain professionals." />
 </head>
 <body class="bg-gray-50 font-sans">
-  <header class="bg-white border-b">
-    <nav class="max-w-4xl mx-auto px-4 py-4 flex justify-between">
-      <a href="/" class="text-2xl font-bold text-blue-900">IMI Lab</a>
-      <a href="/blog" class="text-gray-600">Blog</a>
+  <header class="bg-slate-900 text-white">
+    <nav class="max-w-5xl mx-auto px-4 py-6 flex justify-between items-center">
+      <div>
+        <a href="/" class="text-2xl font-bold tracking-tight">Supply Chain Intelligence</a>
+        <p class="text-slate-400 text-sm mt-1">Daily insights on warehousing, transportation, and AI</p>
+      </div>
+      <a href="/blog" class="text-slate-300 hover:text-white font-medium">All Articles</a>
     </nav>
   </header>
 
-  <section class="bg-blue-900 text-white py-20 text-center">
-    <h1 class="text-5xl font-bold mb-4">Supply Chain Intelligence</h1>
-    <p class="text-xl text-blue-200">Daily insights on warehousing, transportation, and AI</p>
-  </section>
-
-  <main class="max-w-4xl mx-auto px-4 py-16">
+  <main class="max-w-5xl mx-auto px-4 py-12">
     {featured && (
-      <div class="mb-12">
-        <span class="text-blue-600 font-semibold">Featured</span>
-        <h2 class="text-3xl font-bold mt-2">
-          <a href={`/blog/${featured.slug}`}>{featured.data.title}</a>
-        </h2>
-        <p class="text-gray-600 mt-2">{featured.data.description}</p>
-      </div>
+      <section class="mb-16">
+        <span class="text-sm font-semibold text-blue-600 uppercase tracking-wide">Featured</span>
+        <h1 class="text-4xl md:text-5xl font-bold mt-3 mb-4 leading-tight">
+          <a href={`/blog/${featured.slug}`} class="hover:text-blue-700 transition-colors">{featured.data.title}</a>
+        </h1>
+        <p class="text-xl text-gray-600 mb-4 max-w-3xl">{featured.data.description}</p>
+        <div class="flex items-center gap-4 text-sm text-gray-500">
+          <time datetime={featured.data.pubDate}>
+            {new Date(featured.data.pubDate).toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'})}
+          </time>
+          <span class="text-gray-300">|</span>
+          <span class="text-blue-600 font-medium">{featured.data.category}</span>
+        </div>
+      </section>
     )}
-    
-    <h2 class="text-2xl font-bold mb-6">Latest</h2>
-    {recent.map(post => (
-      <div class="mb-6 border-b pb-6">
-        <span class="text-sm text-blue-600">{post.data.category}</span>
-        <h3 class="text-xl font-semibold">
-          <a href={`/blog/${post.slug}`}>{post.data.title}</a>
-        </h3>
-        <p class="text-gray-600">{post.data.description}</p>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-8 pb-2 border-b">Latest Insights</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        {recent.map(post => (
+          <article class="group">
+            <span class="text-sm font-medium text-blue-600">{post.data.category}</span>
+            <h3 class="text-xl font-semibold mt-2 mb-3 group-hover:text-blue-700 transition-colors">
+              <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+            </h3>
+            <p class="text-gray-600 mb-3 line-clamp-2">{post.data.description}</p>
+            <time class="text-sm text-gray-500" datetime={post.data.pubDate}>
+              {new Date(post.data.pubDate).toLocaleDateString('en-US', {month: 'short', day: 'numeric'})}
+            </time>
+          </article>
+        ))}
       </div>
-    ))}
+    </section>
   </main>
+
+  <footer class="bg-slate-900 text-slate-400 py-12 mt-20">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <p class="mb-2">&copy; {new Date().getFullYear()} Supply Chain Intelligence</p>
+      <p class="text-sm">Automated daily insights for supply chain professionals</p>
+    </div>
+  </footer>
 </body>
 </html>
