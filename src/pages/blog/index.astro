@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+const sorted = posts.sort((a, b) => b.data.pubDate - a.data.pubDate);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog | IMI Lab</title>
+</head>
+<body class="bg-gray-50 font-sans">
+  <header class="bg-white border-b">
+    <nav class="max-w-4xl mx-auto px-4 py-4">
+      <a href="/" class="text-xl font-bold text-blue-900">← IMI Lab</a>
+    </nav>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-8">All Articles</h1>
+    {sorted.map(post => (
+      <article class="mb-8 border-b pb-8">
+        <span class="text-sm text-blue-600 font-semibold">{post.data.category}</span>
+        <h2 class="text-2xl font-bold mt-2">
+          <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+        </h2>
+        <p class="text-gray-600 mt-2">{post.data.description}</p>
+        <time class="text-sm text-gray-500">
+          {new Date(post.data.pubDate).toLocaleDateString()}
+        </time>
+      </article>
+    ))}
+  </main>
+</body>
+</html>
