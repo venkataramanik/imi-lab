@@ -10,14 +10,17 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} | Supply Chain Intelligence</title>
+  <title>{title} | IMI Lab</title>
   <meta name="description" content={description} />
 </head>
 <body class="bg-white text-gray-900 font-sans">
   <header class="bg-slate-900 text-white">
     <nav class="max-w-3xl mx-auto px-4 py-6 flex justify-between items-center">
-      <a href="/" class="text-xl font-bold">← Supply Chain Intelligence</a>
-      <span class="text-slate-400 text-sm hidden sm:block">Daily insights</span>
+      <a href="/" class="text-xl font-bold">← IMI Lab</a>
+      <div class="flex gap-6 text-sm">
+        <a href="/blog" class="text-slate-300 hover:text-white">All Articles</a>
+        <a href="/about" class="text-slate-300 hover:text-white">About</a>
+      </div>
     </nav>
   </header>
   
