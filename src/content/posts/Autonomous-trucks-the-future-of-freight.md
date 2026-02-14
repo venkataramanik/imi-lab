@@ -1,7 +1,7 @@
 ---
 title: "Autonomous Trucks: The Future of Freight Is Closer Than It Appears"
 description: "Why autonomous trucking is not about replacing drivers—it's about rethinking the economics of long-haul freight."
-pubDate: 2026-02-15
+pubDate: 2026-02-13
 category: "Transportation"
 tags: ["autonomous", "trucks", "freight", "transportation", "future"]
 featured: false
