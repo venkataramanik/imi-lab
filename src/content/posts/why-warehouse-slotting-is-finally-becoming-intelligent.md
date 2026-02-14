@@ -7,7 +7,7 @@ tags: ["ai", "warehouse", "slotting", "labor", "optimization"]
 featured: true
 ---
 
-## The Problem
+**The Problem**
 
 Walk any distribution center. Watch a picker.
 
@@ -15,90 +15,79 @@ They travel farther than necessary. Pass high-velocity items to reach slow-mover
 
 The warehouse layout—designed for logic, not motion—works against them.
 
-**This is static slotting:**
-- Products assigned by category
-- Seasonal patterns handled reactively  
-- New SKUs shoehorned wherever space exists
+This is static slotting. Products assigned by category. Seasonal patterns handled reactively. New SKUs shoehorned wherever space exists.
 
-**The result:** Travel distance becomes the silent killer of labor productivity.
+The result: travel distance becomes the silent killer of labor productivity.
 
 ---
 
-## Why Static Slotting Persisted
+**Why Static Slotting Persisted**
 
-For decades, slotting followed simple rules:
+For decades, slotting followed simple rules. Fast-movers near shipping. Heavy items at waist height. Categories grouped together.
 
-| Rule | Assumption |
-|------|-----------|
-| Fast-movers near shipping | Demand is stable |
-| Heavy items at waist height | Ergonomics trump motion |
-| Categories grouped together | Pickers think in categories |
+These rules assumed stable demand, predictable patterns, fixed relationships.
 
-These heuristics worked when SKU counts were stable and demand predictable.
+They worked when SKU counts were low and seasons were gentle.
 
-**They fail now.**
+They fail now.
 
-E-commerce exploded SKU variety. Seasonal compression is extreme. Same-day delivery compresses fulfillment windows.
+E-commerce exploded SKU variety. Seasonal compression is extreme—holiday items spike tenfold, then vanish. Same-day delivery compresses fulfillment windows to hours.
 
 The old rules assume stability. The market delivers volatility.
 
 ---
 
-## What Changes With AI
+**What Changes With AI**
 
-Machine learning treats slotting as a **dynamic optimization problem**, not a one-time configuration.
+Machine learning treats slotting as a dynamic optimization problem, not a one-time configuration.
 
-**The system learns:**
+The system learns actual velocity curves by week, not year. A SKU's speed changes; its location should too.
 
-**Velocity curves** — by week, not year. A SKU's speed changes; its location should too.
+It learns product affinities. What ships together should live together.
 
-**Product affinities** — what ships together should live together.
+It learns congestion patterns. Popular zones become bottlenecks; the system spreads the load.
 
-**Congestion patterns** — popular zones become bottlenecks; spread the load.
+It learns relocation economics. Moving inventory costs labor; the system only re-slots when savings exceed moves.
 
-**Relocation economics** — moving inventory costs labor; only re-slot when savings exceed moves.
-
-**The output:** Weekly rebalancing recommendations, tested in simulation before physical moves.
+The output: weekly rebalancing recommendations, tested in simulation before any physical moves.
 
 ---
 
-## The Shift: From Annual to Weekly
+**The Shift**
 
-| Traditional | AI-Driven |
-|-------------|-----------|
-| Changes 1-2x per year | Changes weekly |
-| High cost of change | Simulation reduces risk |
-| Reactive to problems | Predictive optimization |
-| Static structure | Dynamic system |
+Traditional slotting changes once or twice yearly. The cost of change—labor to relocate, training to adjust, disruption to absorb—is too high for frequent updates.
 
----
+AI reduces this cost by predicting impact before moving anything. Simulation shows which picks improve, which worsen, the net effect on travel distance.
 
-## Implementation Reality
+Confidence in the recommendation rises. Frequency of optimization increases.
 
-**The technology is not the hard part. Integration is.**
-
-**Data readiness** matters more than algorithm sophistication. SKU dimensions, accurate locations, clean transaction history—these foundations determine success.
-
-**Change management** determines adoption. Pickers distrust frequent moves. Supervisors resist disruption. The case for change must be demonstrated, not assumed.
-
-**Pilot scope** controls risk. One zone, three weeks, measured results. Prove value, then scale.
+The warehouse becomes a dynamic system, not a static structure.
 
 ---
 
-## The Bottom Line
+**Implementation Reality**
+
+The technology is not the hard part. Integration is.
+
+Data readiness matters more than algorithm sophistication. SKU dimensions, accurate locations, clean transaction history—these foundations determine success.
+
+Change management determines adoption. Pickers distrust frequent moves. Supervisors resist disruption. The case for change must be demonstrated, not assumed.
+
+Pilot scope controls risk. One zone, three weeks, measured results. Prove value, then scale.
+
+---
+
+**The Bottom Line**
 
 Warehouse labor is among the largest controllable costs in fulfillment. Slotting optimization is among the highest-leverage interventions.
 
 The tools to optimize dynamically now exist at practical cost.
 
-**The constraint shifts from technology to organizational willingness:**
-- To trust algorithms
-- To move products frequently  
-- To invest in data infrastructure
+The constraint shifts from technology to organizational willingness. To trust algorithms. To move products frequently. To invest in data infrastructure.
 
-This is the pattern across supply chain technology. The bottleneck is rarely the math.
+This is the pattern across supply chain technology.
 
-**It is the motion.**
+The bottleneck is rarely the math. It is the motion.
 
 ---
 
