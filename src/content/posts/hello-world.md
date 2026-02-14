@@ -1,7 +1,7 @@
 ---
 title: "Welcome to IMI Lab"
 description: "Your daily source for supply chain innovation and technology insights."
-pubDate: 2024-01-15
+pubDate: 2026-02-13
 category: "Strategy"
 tags: ["introduction", "supply chain", "automation"]
 featured: true
