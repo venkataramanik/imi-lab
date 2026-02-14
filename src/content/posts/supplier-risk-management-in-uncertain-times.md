@@ -1,7 +1,7 @@
 ---
 title: "Supplier Risk Management: Beyond the Scorecard"
 description: "Why traditional supplier risk management fails when you need it most—and how leading procurement teams are building resilience."
-pubDate: 2026-02-17
+pubDate: 2026-02-13
 category: "Procurement"
 tags: ["supplier", "risk", "procurement", "resilience", "sourcing"]
 featured: false
