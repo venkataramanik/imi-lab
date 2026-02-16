@@ -1,0 +1,118 @@
+---
+title: "The Quantified Supply Chain: Metrics That Matter"
+description: "Dashboards drown in data. Leaders focus on the few numbers that actually drive decisions."
+pubDate: 2026-02-16
+category: "Strategy"
+tags: ["metrics", "kpi", "measurement", "analytics", "performance"]
+featured: false
+---
+
+## The Measurement Trap
+
+Modern supply chains generate infinite data. Every transaction, movement, status change is logged, timestamped, stored. Dashboards proliferate. Metrics multiply. Reports accumulate.
+
+None of this guarantees insight.
+
+Most organizations measure what is easy, not what matters. They track activity, not outcomes. They optimize local metrics, not system performance. They drown in data and thirst for wisdom.
+
+## The Hierarchy of Metrics
+
+Not all numbers deserve equal attention. The effective framework distinguishes levels:
+
+**Strategic metrics** — Board and CEO focus. Cash conversion cycle. Working capital as percent of revenue. Supply chain cost to serve. These determine enterprise value.
+
+**Tactical metrics** — Executive and VP focus. Inventory turns by category. Perfect order rate. Supplier performance scorecard. These guide resource allocation and priority.
+
+**Operational metrics** — Manager and supervisor focus. Pick accuracy. On-time shipment. Dock-to-stock time. These drive daily execution and improvement.
+
+The error is confusing levels. Operational metrics reported to the board. Strategic metrics ignored by operations. Misalignment produces noise, not signal.
+
+## Vanity vs. Action Metrics
+
+| Vanity Metric | Action Metric | Why It Matters |
+|-------------|-------------|--------------|
+| Total inventory value | Inventory turns by velocity segment | Turns drive cash flow, not absolute value |
+| On-time delivery percentage | Cost of late delivery by customer | Not all lateness is equal |
+| Supplier count | Supplier performance distribution | Fewer excellent beats many mediocre |
+| Transportation spend per unit | Total landed cost by source | Cheaper freight can increase total cost |
+| Forecast accuracy | Forecast value add | Perfect forecast of wrong demand is useless |
+
+## The Cost of Measurement
+
+Every metric tracked has a cost. Data collection, system integration, reporting, review time. The burden compounds.
+
+The disciplined question: What decision does this metric inform? If none, eliminate it. If unclear, clarify or remove.
+
+The best organizations measure less, not more. They focus on the critical few that predict outcomes and guide action.
+
+## The Lead Indicator Problem
+
+Most metrics are lagging. They report what happened. They do not predict what will happen.
+
+**Lagging indicators** — inventory level, stockout frequency, cost per unit. Outcomes already determined.
+
+**Leading indicators** — supplier lead time trend, forecast bias, capacity utilization trajectory. Early warnings of future outcomes.
+
+The shift to predictive measurement requires:
+- Understanding causal relationships
+- Investing in data infrastructure
+- Tolerating uncertainty and false signals
+- Building organizational trust in predictions
+
+## The GM Experience
+
+At General Motors, we built KPI frameworks across 15 countries, 700+ suppliers, $7B freight spend. The learning:
+
+**Start with decisions.** What must we decide weekly, monthly, quarterly? Design metrics to inform those decisions.
+
+**Segment ruthlessly.** A-items deserve detailed tracking. C-items get aggregate treatment. Measurement intensity matches business impact.
+
+**Visualize exception.** Green metrics require no attention. Red metrics demand action. Dashboards should surface only what needs eyes.
+
+**Review and retire.** Every metric has a half-life. Business changes, metrics become irrelevant. Quarterly audit: keep, modify, eliminate.
+
+## The Microsoft Perspective
+
+At Microsoft, we measured pre-sales effectiveness through pipeline velocity, win rates, deal size, time-to-close. The metrics drove behavior: pursue larger deals, accelerate early engagement, disqualify unlikely opportunities.
+
+The same discipline applies to supply chain. Metrics shape behavior. Design carefully, because people optimize what is measured.
+
+## The Three Metrics That Matter
+
+If forced to three, the choice depends on strategic priority:
+
+**Cash-focused organization:**
+- Cash conversion cycle (strategic)
+- Inventory turns (tactical)
+- Days payable outstanding (operational)
+
+**Service-focused organization:**
+- Perfect order rate (strategic)
+- On-time-in-full (tactical)
+- Order cycle time (operational)
+
+**Cost-focused organization:**
+- Total cost to serve (strategic)
+- Cost per unit by channel (tactical)
+- Productivity per labor hour (operational)
+
+No universal answer. The right metrics align with strategy and drive the decisions that execute it.
+
+## The Bottom Line
+
+Quantification is essential. Measurement is dangerous without discipline.
+
+The effective supply chain organization:
+- Measures what drives decisions, not what is easy to count
+- Distinguishes strategic, tactical, operational levels
+- Balances lagging outcomes with leading predictions
+- Reviews and retires metrics as business evolves
+- Recognizes that every metric tracked has a cost in attention and action
+
+The goal is not more data. It is better judgment, informed by the right data.
+
+&gt; In God we trust. All others bring data. But bring the right data, or drown in numbers that decide nothing.
+
+---
+
+*Published by IMI Lab. Exploring technology-driven supply chains.*
