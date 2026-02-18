@@ -1,0 +1,86 @@
+---
+title: "The Physics of Carrier Rates: Density, Cube, and Dim Weight"
+description: "Why you pay for space, not just weight. The quantitative reality of freight density and its impact on transportation spend."
+pubDate: 2026-03-08
+category: "Strategy"
+tags: ["transportation", "logistics", "carrier-rates", "dimensional-weight", "freight-density"]
+featured: false
+---
+
+## The Capacity Constraint
+
+Carriers don't sell weight; they sell capacity. A trailer has two primary limits: **Floor Space (Cube)** and **Weight (Payload)**. 
+
+When a shipper sends "popcorn"—high-volume, low-weight goods—they take up the entire trailer but only use a fraction of the weight capacity. To protect their margins, carriers use **Dimensional (Dim) Weight** and **Freight Class** to ensure they are compensated for the space occupied.
+
+The math is a volumetric conversion. The implications are a direct hit to your landed cost.
+
+## The Dimensional Weight Formula
+
+Dim weight reflects the "theoretical weight" of a package based on its volume. If the Dim Weight is higher than the actual scale weight, the carrier bills you for the Dim Weight.
+
+**Dim Weight = (Length × Width × Height) / Dim Factor**
+
+
+
+The **Dim Factor** (or "dim divisor") is the lever carriers pull to increase rates without changing their base tariffs. 
+- A lower divisor = A higher billable weight.
+- Current industry standard divisors (approx.): 139 for Express, 166 for Ground/Retail.
+
+## The LTL Density Matrix
+
+For Less-than-Truckload (LTL) shipping, the **NMFC (National Motor Freight Classification)** uses density to assign a "Freight Class." 
+
+There are 18 classes (from Class 50 to Class 500). As density goes down, the class goes up—and the rate follows.
+
+| Density (lbs/cu ft) | Freight Class | Relative Rate | Item Example |
+|---------------------|---------------|---------------|--------------|
+| Over 50             | 50            | Lowest        | Steel Nuts/Bolts |
+| 15 to 22.5          | 70            | Low-Mid       | Food Items |
+| 5 to 6              | 175           | High          | Clothing/Furniture |
+| Less than 1         | 500           | Highest       | Ping Pong Balls |
+
+
+
+**The Rule of Thumb:** For every step up in class, your rate typically increases by 10% to 20%.
+
+## The "Weight-Break" Optimization
+
+Carrier rate sheets are structured in weight brackets (e.g., L5C, M1M, M2M). Because of the base rates and minimum charges, there is a "Weight-Break" point where it is cheaper to "over-declare" your weight to move into a heavier, lower-rate bracket.
+
+**The Math:** If shipping 480 lbs at the "Under 500 lbs" rate is more expensive than shipping 500 lbs at the "Over 500 lbs" rate, you bill at the 500 lbs rate. 
+
+Most modern Transportation Management Systems (TMS) automate this "phantom weight" calculation to find the lowest cost.
+
+## Carrier Operating Ratio (OR)
+
+Carriers set these rates to maintain a target **Operating Ratio (OR)**:
+
+**OR = (Operating Expenses / Operating Revenue) × 100**
+
+- An OR of 95 means the carrier keeps $0.05 of every dollar as profit.
+- If your freight is "unfriendly" (low density, difficult to stack, high claims), the carrier will apply an **Arbitrary Multiplier** or "Non-Standard" surcharge to protect their OR.
+
+## The Technology Lever: "Cubic Capacity"
+
+As a technology leader, the strategy to combat these rates isn't just negotiation; it's **optimization**:
+
+1. **Cartonization Algorithms:** Selecting the smallest box that fits the order to maximize density.
+2. **Pallet Optimization:** Using software to ensure "Chimney-style" stacking is avoided, increasing the pounds per cubic foot.
+3. **Load Consolidation:** Combining multiple LTL shipments into a single "Density-Rich" Full Truckload (FTL).
+
+## The Bottom Line
+
+Freight rates are a negotiation between your packaging and the carrier's trailer dimensions.
+
+The quantitative discipline:
+- Audit your average shipping density across all product lines.
+- Monitor changes in carrier Dim Factors—a change from 166 to 139 is a hidden 19% price increase.
+- Use TMS data to identify "High Class" SKUs and investigate packaging redesigns.
+- Negotiate "FAK" (Freight All Kinds) rates to simplify classes and cap costs for diverse shipments.
+
+> You cannot change the size of a trailer, but you can change how much of it you actually fill with product instead of air.
+
+---
+
+*Published by IMI Lab. Exploring technology-driven supply chains.*
