@@ -2,7 +2,7 @@
 title: "Financial Velocity: The Math of the Cash-to-Cash Cycle"
 description: "Supply chain management is just finance in motion. Quantifying the time between paying a supplier and getting paid by a customer."
 pubDate: 2026-02-19
-category: "Finance & Strategy"
+category: "Strategy"
 tags: ["working-capital", "C2C", "DSO", "DPO", "DIO", "liquidity"]
 featured: true
 ---
