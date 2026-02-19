@@ -1,4 +1,6 @@
-const postsCollection = defineCollection({
+import { defineCollection, z } from 'astro:content';
+
+const posts = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
@@ -7,18 +9,20 @@ const postsCollection = defineCollection({
     updatedDate: z.date().optional(),
     author: z.string().default('IMI Lab'),
     category: z.enum([
-      'Warehousing', 
-      'Transportation', 
-      'Procurement', 
-      'AI/ML', 
-      'Sustainability', 
-      'Strategy', 
-      'Planning', 
-      'Logistics', 
-      'Finance', 
+      'Warehousing',
+      'Transportation',
+      'Procurement',
+      'AI/ML',
+      'Sustainability',
+      'Strategy',
+      'Planning',
+      'Logistics',
+      'Finance',
       'Technology'
     ]),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
   }),
 });
+
+export const collections = { posts };
