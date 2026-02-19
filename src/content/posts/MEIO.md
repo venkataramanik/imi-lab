@@ -2,7 +2,7 @@
 title: "The Multi-Echelon Equilibrium: The Math of Strategic Decoupling"
 description: "Why local optimization leads to global failure. Calculating where to hold inventory in a multi-tier network."
 pubDate: 2026-02-19
-category: "Planning"
+category: "Strategy"
 tags: ["MEIO", "inventory-optimization", "supply-chain-design", "decoupling", "working-capital"]
 featured: false
 ---
