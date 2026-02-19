@@ -8,7 +8,19 @@ const postsCollection = defineCollection({
     pubDate: z.date(),
     updatedDate: z.date().optional(),
     author: z.string().default('IMI Lab'),
-    category: z.enum(['Warehousing', 'Transportation', 'Procurement', 'AI/ML', 'Sustainability', 'Strategy']),
+    // Added 'Planning', 'Finance', 'Logistics', and 'Technology' to match your recent content
+    category: z.enum([
+      'Warehousing', 
+      'Transportation', 
+      'Procurement', 
+      'AI/ML', 
+      'Sustainability', 
+      'Strategy', 
+      'Planning', 
+      'Finance', 
+      'Logistics', 
+      'Technology'
+    ]),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
   }),
