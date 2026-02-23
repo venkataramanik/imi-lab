@@ -1,7 +1,7 @@
 ---
 title: "Total Landed Cost: Looking Beyond the Unit Price"
 description: "Why the cheapest source is often the most expensive. The quantitative reality of end-to-end procurement."
-pubDate: 2026-02-27
+pubDate: 2026-02-22
 category: "Strategy"
 tags: ["procurement", "logistics", "TLC", "finance", "global-trade"]
 featured: false
