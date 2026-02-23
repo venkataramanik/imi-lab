@@ -1,7 +1,7 @@
 ---
 title: "The Center of Gravity: Locating the Heart of Your Network"
 description: "The physics of transportation. How to mathematically determine the optimal location for a distribution center."
-pubDate: 2026-03-05
+pubDate: 2026-02-22
 category: "Strategy"
 tags: ["network-design", "logistics", "transportation", "center-of-gravity", "supply-chain-physics"]
 featured: false
